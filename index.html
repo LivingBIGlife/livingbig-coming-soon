@@ -162,35 +162,16 @@
     background: transparent !important;
   }
 
+  /* Hide Kit branding */
+  .kit-embed [class*="powered"],
+  .kit-embed [class*="built-with"],
+  .kit-embed a[href*="kit.com"],
+  .kit-embed a[href*="convertkit"] {
+    display: none !important;
+  }
+
   .footer {
-    position: relative;
-    z-index: 2;
-    padding: 0 48px 32px;
-    max-width: 1240px;
-    margin: 0 auto;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 16px;
-    font-size: 13px;
-    color: rgba(255, 255, 255, 0.7);
-  }
-
-  .footer-socials {
-    display: flex;
-    gap: 20px;
-  }
-
-  .footer-socials a {
-    color: rgba(255, 255, 255, 0.7);
-    text-decoration: none;
-    transition: color 0.2s;
-  }
-
-  .footer-socials a:hover {
-    color: white;
+    display: none;
   }
 
   @media (max-width: 700px) {
@@ -213,12 +194,6 @@
 
   <nav class="nav">
     <a href="/" class="wordmark">Living BIG</a>
-    <div class="nav-links">
-      <a href="https://instagram.com/livingbig.life">Instagram</a>
-      <a href="https://x.com/LivingBigLife">X</a>
-      <a href="https://youtube.com/@LivingBigLife">YouTube</a>
-      <a href="https://www.linkedin.com/company/livingbig">LinkedIn</a>
-    </div>
   </nav>
 
   <div class="content">
@@ -232,9 +207,6 @@
     </div>
   </div>
 
-  <footer class="footer">
-    <div>livingbig.life</div>
-  </footer>
 </div>
 
 </body>
