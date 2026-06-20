@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Living BIG — The biggest creators meet the world's biggest animals</title>
+<meta name="description" content="The biggest creators meet the world's biggest animals and their biggest champions. The first expedition launches July 2026.">
+
+<!-- Favicons -->
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Living BIG">
+<meta property="og:title" content="Living BIG — The biggest creators meet the world's biggest animals">
+<meta property="og:description" content="The biggest creators meet the world's biggest animals and their biggest champions. The first expedition launches July 2026.">
+<meta property="og:image" content="https://livingbig.life/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://livingbig.life/">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@LivingBigLife">
+<meta name="twitter:title" content="Living BIG">
+<meta name="twitter:description" content="The biggest creators meet the world's biggest animals and their biggest champions. The first expedition launches July 2026.">
+<meta name="twitter:image" content="https://livingbig.life/og-image.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0A1929;
+    --accent: #0072B5;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--ink);
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  .page {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .bg {
+    position: absolute;
+    inset: 0;
+    background-image: url('home-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+  }
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(to bottom, rgba(10, 25, 41, 0.4) 0%, rgba(10, 25, 41, 0) 18%),
+      linear-gradient(to top right, rgba(10, 25, 41, 0.75) 0%, rgba(10, 25, 41, 0.2) 55%, rgba(10, 25, 41, 0) 80%);
+    z-index: 1;
+  }
+
+  .nav {
+    position: relative;
+    z-index: 2;
+    padding: 32px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .wordmark {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 22px;
+    letter-spacing: -0.01em;
+    color: white;
+    text-decoration: none;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 24px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+  }
+
+  .nav-links a:hover {
+    opacity: 1;
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 48px 120px;
+    max-width: 1240px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .eyebrow {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: white;
+    opacity: 0.85;
+    margin-bottom: 28px;
+  }
+
+  h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: clamp(30px, 3.4vw, 48px);
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    color: white;
+    max-width: 580px;
+    margin-bottom: 48px;
+  }
+
+  .signup-wrap {
+    max-width: 480px;
+  }
+
+  .signup-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    opacity: 0.92;
+    margin-bottom: 16px;
+    line-height: 1.5;
+  }
+
+  .kit-embed {
+    max-width: 480px;
+  }
+
+  /* Kit form styling — scoped to beat Kit's specificity */
+  .kit-embed .formkit-form[data-uid="e715b015c9"] {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+  }
+
+  .kit-embed .formkit-form[data-uid="e715b015c9"] .formkit-input {
+    background: rgba(255, 255, 255, 0.15) !important;
+    border: 2px solid rgba(255, 255, 255, 0.5) !important;
+    color: #ffffff !important;
+    border-radius: 999px !important;
+    padding: 16px 22px !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    min-height: 54px !important;
+  }
+
+  .kit-embed .formkit-form[data-uid="e715b015c9"] .formkit-input::placeholder {
+    color: rgba(255, 255, 255, 0.6) !important;
+  }
+
+  .kit-embed .formkit-form[data-uid="e715b015c9"] .formkit-input:focus {
+    border-color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.22) !important;
+    outline: none !important;
+  }
+
+  .kit-embed .formkit-form[data-uid="e715b015c9"] .formkit-submit {
+    background: #ffffff !important;
+    border-radius: 999px !important;
+    padding: 16px 28px !important;
+    min-height: 54px !important;
+    transition: background 0.2s !important;
+    box-shadow: none !important;
+  }
+
+  .kit-embed .formkit-form[data-uid="e715b015c9"] .formkit-submit > div,
+  .kit-embed .formkit-form[data-uid="e715b015c9"] .formkit-spinner {
+    background: transparent !important;
+  }
+
+  .kit-embed .formkit-form[data-uid="e715b015c9"] .formkit-submit span {
+    color: #0A1929 !important;
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+  }
+
+  .kit-embed .formkit-form[data-uid="e715b015c9"] .formkit-submit:hover {
+    background: #0072B5 !important;
+  }
+
+  .kit-embed .formkit-form[data-uid="e715b015c9"] .formkit-submit:hover span {
+    color: #ffffff !important;
+  }
+
+  .kit-embed .formkit-form[data-uid="e715b015c9"] .formkit-alert {
+    background: rgba(255, 100, 100, 0.12) !important;
+    color: rgba(255, 200, 200, 1) !important;
+    border: 1px solid rgba(255, 100, 100, 0.3) !important;
+    border-radius: 8px !important;
+    font-size: 13px !important;
+    font-family: 'Inter', sans-serif !important;
+  }
+
+  .kit-embed .formkit-powered-by-convertkit-container {
+    display: none !important;
+  }
+
+  /* Hide Kit branding */
+  .kit-embed [class*="powered"],
+  .kit-embed [class*="built-with"],
+  .kit-embed a[href*="kit.com"],
+  .kit-embed a[href*="convertkit"] {
+    display: none !important;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  @media (max-width: 700px) {
+    .nav, .content, .footer { padding-left: 24px; padding-right: 24px; }
+    .content { padding-bottom: 64px; }
+    .nav-links { gap: 14px; font-size: 12px; }
+    .footer { flex-direction: column; text-align: center; gap: 12px; }
+
+    .overlay {
+      background: linear-gradient(to bottom, rgba(10, 25, 41, 0.2) 0%, rgba(10, 25, 41, 0.4) 50%, rgba(10, 25, 41, 0.85) 100%);
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="bg"></div>
+  <div class="overlay"></div>
+
+  <nav class="nav">
+    <a href="/" class="wordmark">Living BIG</a>
+  </nav>
+
+  <div class="content">
+    <div class="eyebrow">Coming soon</div>
+    <h1>The biggest creators meet the world's biggest animals — and their biggest champions.</h1>
+    <div class="signup-wrap">
+      <div class="signup-label">Be there when the first expedition launches.</div>
+      <div class="kit-embed">
+        <script async data-uid="e715b015c9" src="https://living-big.kit.com/e715b015c9/index.js"></script>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  // Hide Kit branding by text match (CSS selectors can miss it)
+  function hideKitBranding() {
+    document.querySelectorAll('.kit-embed').forEach(embed => {
+      embed.querySelectorAll('*').forEach(el => {
+        const text = (el.textContent || '').trim().toLowerCase();
+        const isBranding = (
+          text === 'built with kit' ||
+          text === 'powered by kit' ||
+          text === 'powered by convertkit' ||
+          (el.tagName === 'A' && el.href && (el.href.includes('kit.com') || el.href.includes('convertkit')))
+        );
+        if (isBranding && text.length < 40) {
+          let target = el;
+          while (target.parentElement && target.parentElement !== embed && target.parentElement.children.length === 1) {
+            target = target.parentElement;
+          }
+          target.style.display = 'none';
+        }
+      });
+    });
+  }
+  setTimeout(hideKitBranding, 500);
+  setTimeout(hideKitBranding, 1500);
+  setTimeout(hideKitBranding, 3000);
+</script>
+
+</body>
+</html>
